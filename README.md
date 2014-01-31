@@ -10,37 +10,45 @@ representation.
 
 Basic usage
 
-    > require 'organic_hash'
-    > oh = OrganicHash.new
-    > oh.hash 'josephcc'
-    => "truthfully-better-explosion"
-    > oh.hash 'josephcc', true
-    => ["truthfully", "better", "explosion"]
-    > oh.hash 'asldkjasldkjasdlkajsd'
-    => "so-confident-turret"
+```ruby
+> require 'organic_hash'
+> oh = OrganicHash.new
+> oh.hash 'josephcc'
+=> "truthfully-better-explosion"
+> oh.hash 'josephcc', true
+=> ["truthfully", "better", "explosion"]
+> oh.hash 'asldkjasldkjasdlkajsd'
+=> "so-confident-turret"
+```
 
 Different length
 
-    > oh = OrganicHash.new(4)
-    > oh.hash 'Zero'
-    => "morally-unexpected-private-commander"
+```ruby
+> oh = OrganicHash.new(4)
+> oh.hash 'Zero'
+=> "morally-unexpected-private-commander"
+```
 
 Random hashes
     
-    > oh = OrganicHash.new(4)
-    > oh.rand
-    => "most-cool-coffee"
-    > oh.rand
-    => "currently-upcoming-signals"
-    > oh.rand true
-    => ["simultaneously", "automatic", "action"]
+```ruby
+> oh = OrganicHash.new(4)
+> oh.rand
+=> "most-cool-coffee"
+> oh.rand
+=> "currently-upcoming-signals"
+> oh.rand true
+=> ["simultaneously", "automatic", "action"]
+```
 
 Class methods for quick asscess
 
-    > OrganicHash.hash 'asdlkj'
-    => "quite-unacceptable-genius"
-    > OrganicHash.rand
-    => "emotionally-restricted-bombs"
+```ruby
+> OrganicHash.hash 'asdlkj'
+=> "quite-unacceptable-genius"
+> OrganicHash.rand
+=> "emotionally-restricted-bombs"
+```
 
 
 ## Authors
