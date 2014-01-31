@@ -1,4 +1,5 @@
 require 'digest/sha1'
+require 'securerandom'
 
 class OrganicHash
 
@@ -30,8 +31,16 @@ class OrganicHash
     array ? output : output.join(@delimiter)
   end
 
-  def self.hash(hex)
-    OrganicHash.new.hash(hex)
+  def rand(array = false)
+	  hash SecureRandom.hex, array
+  end
+
+  def self.hash(str, array = false)
+    OrganicHash.new.hash str, array
+  end
+
+  def self.rand(array = false)
+    OrganicHash.new.rand array
   end
 
   private
