@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.email = ["josephcc.cmu@gmail.com", "itszero@gmail.com"]
   s.license = 'Apache License, Version 2.0'
 
-  s.summary = ""
-  s.description = ""
+  s.description = "Organic Hash hashes strings (user ID, hashes) to a human-readable, scifi-themed representation."
+  s.summary = "Converts strings to awesome scifi objects!!"
   s.homepage = "https://github.com/josephcc/organic_hash"
 
   s.extra_rdoc_files = [
