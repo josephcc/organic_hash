@@ -25,7 +25,7 @@ class OrganicHash
     adjs = adjs.map { |i| @adj[i % @adj.length] }
     advs = advs.map { |i| @adv[i % @adv.length] }
 
-    output = advs.zip(adjs).flatten + [@noun[noun_idx % @noun.length]]
+    output = adjs.zip(advs).map(&:reverse).flatten.reject(&:nil?) + [@noun[noun_idx % @noun.length]]
 
     array ? output : output.join(@delimiter)
   end
