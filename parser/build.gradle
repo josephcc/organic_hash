@@ -1,0 +1,31 @@
+apply plugin: 'scala'
+apply plugin: 'idea'
+
+repositories {
+  mavenCentral()
+}
+
+sourceCompatibility = 1.6
+
+version = "1.0.0-SNAPSHOT"
+
+dependencies {
+  compile 'org.scala-lang:scala-library:2.10.3'
+
+  compile fileTree(dir: 'lib', include: '*.jar')
+
+  runtime 'org.scala-lang:scala-compiler:2.10.3'
+}
+
+jar {
+  from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+}
+
+task run(dependsOn: jar, type: JavaExec) {
+  main = 'org.zj.unigram_counter.Main'
+  classpath files("${project.buildDir}/libs/${project.name}-${version}.jar")
+}
+
+tasks.withType(ScalaCompile) {
+  scalaCompileOptions.useAnt = false
+}
