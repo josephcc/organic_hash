@@ -19,12 +19,14 @@ Basic usage
 ```ruby
 > require 'organic_hash'
 > oh = OrganicHash.new
+> oh.hash 'ID_A3AHG7FKPIV07'
+=> "technically-huge-witch"
+> oh.hash 'asldkjasldkjasdlkajsd'
+=> "so-confident-turret"
 > oh.hash 'josephcc'
 => "truthfully-better-explosion"
 > oh.hash 'josephcc', true
 => ["truthfully", "better", "explosion"]
-> oh.hash 'asldkjasldkjasdlkajsd'
-=> "so-confident-turret"
 ```
 
 Different length
