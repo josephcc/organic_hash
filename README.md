@@ -35,7 +35,7 @@ Random hashes
     > oh.rand true
     => ["simultaneously", "automatic", "action"]
 
-Class methods with default length 3
+Class methods for quick asscess
 
     > OrganicHash.hash 'asdlkj'
     => "quite-unacceptable-genius"
@@ -43,6 +43,15 @@ Class methods with default length 3
     => "emotionally-restricted-bombs"
 
 
+## Authors
 
+Joseph Chee Chang <josephcc.cmu@gmail.com> and Zero Cho <itszero@gmail.com>
 
+## License
+
+Apache License, Version 2.0
+
+## URL
+
+https://github.com/josephcc/organic_hash
 
