@@ -38,7 +38,7 @@ Different length
 Random hashes
     
 ```ruby
-> oh = OrganicHash.new(4)
+> oh = OrganicHash.new
 > oh.rand
 => "most-cool-coffee"
 > oh.rand
