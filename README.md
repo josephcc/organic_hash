@@ -1,2 +1,2 @@
-Organic-Hash
+Organic Hash
 ============
