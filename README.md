@@ -41,7 +41,7 @@ Random hashes
 => ["simultaneously", "automatic", "action"]
 ```
 
-Class methods for quick asscess
+Class methods for quick access
 
 ```ruby
 > OrganicHash.hash 'asdlkj'
