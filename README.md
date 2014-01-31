@@ -6,6 +6,12 @@ Converts strings to awesome scifi objects!!
 Organic Hash hashes strings (user ID, hashes) to a human-readable, scifi-themed
 representation.
 
+## Install
+
+```bash
+$ gem install organic_hash
+```
+
 ## Usage
 
 Basic usage
@@ -62,4 +68,6 @@ Apache License, Version 2.0
 ## URL
 
 https://github.com/josephcc/organic_hash
+
+http://rubygems.org/gems/organic_hash
 
