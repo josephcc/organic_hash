@@ -3,7 +3,7 @@ require 'securerandom'
 
 class OrganicHash
 
-  VERSION = "1.0.1"
+  VERSION = "1.0.2"
   DATA_DIR = File.expand_path(File.join(File.dirname(__FILE__), '..', 'data'))
   NOUN = File.read(File.join(DATA_DIR, "noun.dat")).split("\n")
   ADJ = File.read(File.join(DATA_DIR, "adj.dat")).split("\n")
