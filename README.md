@@ -6,6 +6,10 @@ Converts strings to awesome scifi objects!!
 Organic Hash hashes strings (user ID, hashes) to a human-readable, scifi-themed
 representation.
 
+## Demo
+
+http://truly-civilized-pancakes.herokuapp.com
+
 ## Install
 
 ```bash
